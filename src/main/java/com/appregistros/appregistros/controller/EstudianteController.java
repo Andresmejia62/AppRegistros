@@ -1,6 +1,7 @@
 package com.appregistros.appregistros.controller;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
@@ -37,7 +38,11 @@ public class EstudianteController {
         String carrera = txtCarrera.getText();
 
         if (nombre.isBlank() || apellido.isBlank() || cif.isBlank() || facultad.isBlank() || carrera.isBlank()) {
-            txtAreaEstudiantes.setText("Debe llenar todos los campos.");
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setTitle("Error");
+            alert.setHeaderText(null);
+            alert.setContentText("Campos vacíos. Por favor, complete todos los campos.");
+            alert.showAndWait();
             return;
         }
 
@@ -46,7 +51,11 @@ public class EstudianteController {
         try {
             cifInt = Integer.parseInt(cif);
         } catch (NumberFormatException e) {
-            txtAreaEstudiantes.setText("El CIF debe ser un número entero.");
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setTitle("Error");
+            alert.setHeaderText(null);
+            alert.setContentText("El CIF debe ser un número entero.");
+            alert.showAndWait();
             return;
         }
 
