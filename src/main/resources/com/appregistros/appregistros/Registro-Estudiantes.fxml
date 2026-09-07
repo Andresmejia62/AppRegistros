@@ -11,12 +11,12 @@
             <Font name="Ayuthaya" size="21.0" />
          </font>
       </Label>
-      <TextField fx:id="txtNombre" layoutX="140.0" layoutY="78.0" />
+      <TextField fx:id="txtNombre" layoutX="140.0" layoutY="78.0" promptText="Nombre del estudiante" />
       <TextArea fx:id="txtAreaEstudiantes" layoutX="369.0" layoutY="62.0" prefHeight="200.0" prefWidth="200.0" />
-      <TextField fx:id="txtApellido" layoutX="140.0" layoutY="116.0" />
-      <TextField fx:id="txtCIF" layoutX="140.0" layoutY="157.0" />
-      <TextField fx:id="txtFacultad" layoutX="140.0" layoutY="200.0" />
-      <TextField fx:id="txtCarrera" layoutX="140.0" layoutY="236.0" />
+      <TextField fx:id="txtApellido" layoutX="140.0" layoutY="116.0" promptText="Apellido del estudiante" />
+      <TextField fx:id="txtCIF" layoutX="140.0" layoutY="157.0" promptText="Codigo de estudiante" />
+      <TextField fx:id="txtFacultad" layoutX="140.0" layoutY="200.0" promptText="Ingenieria/Marketing/Ciencias Salud" />
+      <TextField fx:id="txtCarrera" layoutX="140.0" layoutY="236.0" promptText="Sistemas/Medicina/Derecho" />
       <Label layoutX="46.0" layoutY="81.0" prefWidth="68.0" text="Nombre:">
          <font>
             <Font size="16.0" />
