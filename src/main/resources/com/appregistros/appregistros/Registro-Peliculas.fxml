@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="757.0" style="-fx-background-color: #A6FFF6;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.appregistros.appregistros.controller.EstudianteController">
+<AnchorPane prefHeight="400.0" prefWidth="757.0" style="-fx-background-color: #A6FFF6;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.appregistros.appregistros.controller.PeliculaController">
    <children>
       <Label layoutX="23.0" layoutY="22.0" text="Registro de Peliculas">
          <font>
@@ -12,10 +12,10 @@
          </font>
       </Label>
       <TextField fx:id="txtNombre" layoutX="140.0" layoutY="78.0" promptText="Titulo pelicula" />
-      <TextField fx:id="txtApellido" layoutX="140.0" layoutY="116.0" promptText="Productor de la pelicula" />
-      <TextField fx:id="txtCIF" layoutX="140.0" layoutY="157.0" promptText="Fecha de estreno" />
-      <TextField fx:id="txtFacultad" layoutX="140.0" layoutY="200.0" promptText="Accion/Drama/Terror" />
-      <TextField fx:id="txtCarrera" layoutX="140.0" layoutY="236.0" promptText="142 mins" />
+      <TextField fx:id="txtDirector" layoutX="140.0" layoutY="116.0" promptText="Productor de la pelicula" />
+      <TextField fx:id="txtFechaEstreno" layoutX="140.0" layoutY="157.0" promptText="Fecha de estreno" />
+      <TextField fx:id="txtGenero" layoutX="140.0" layoutY="200.0" promptText="Accion/Drama/Terror" />
+      <TextField fx:id="txtDuracion" layoutX="140.0" layoutY="236.0" promptText="142 mins" />
       <Label layoutX="46.0" layoutY="81.0" prefWidth="68.0" text="Nombre:">
          <font>
             <Font size="16.0" />
@@ -41,14 +41,14 @@
          </font>
       </Label>
       <Separator layoutX="329.0" layoutY="62.0" orientation="VERTICAL" prefHeight="200.0" />
-      <Button fx:id="btnAgregar" layoutX="38.0" layoutY="291.0" mnemonicParsing="false" onAction="#AgregarEstudiante" prefHeight="30.0" prefWidth="76.0" style="-fx-background-color: FCFAFA;" text="Agregar" />
+      <Button fx:id="btnAgregar" layoutX="38.0" layoutY="291.0" mnemonicParsing="false" onAction="#guardarPelicula" prefHeight="30.0" prefWidth="76.0" style="-fx-background-color: FCFAFA;" text="Agregar" />
       <Button fx:id="btnLimpiar" layoutX="140.0" layoutY="291.0" mnemonicParsing="false" onAction="#limpiarCampos" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: FCFAFA;" text="Limpiar" />
       <Button fx:id="btnBorrar" layoutX="253.0" layoutY="291.0" mnemonicParsing="false" onAction="#limpiarLista" prefHeight="30.0" prefWidth="76.0" style="-fx-background-color: FCFAFA;" text="Borrar" />
       <TableView fx:id="tblPeliculas" layoutX="346.0" layoutY="70.0" prefHeight="200.0" prefWidth="394.0">
         <columns>
           <TableColumn fx:id="colNombre" prefWidth="75.0" text="Nombre" />
           <TableColumn fx:id="colDirector" prefWidth="75.0" text="Director" />
-            <TableColumn fx:id="colFecha" prefWidth="75.0" text="Fecha" />
+            <TableColumn fx:id="colFechaEstreno" prefWidth="75.0" text="Fecha" />
             <TableColumn fx:id="colGenero" prefWidth="75.0" text="Genero" />
             <TableColumn fx:id="colDuracion" prefWidth="75.0" text="Duracion" />
         </columns>

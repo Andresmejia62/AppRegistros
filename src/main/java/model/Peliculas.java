@@ -18,6 +18,8 @@ public class Peliculas {
         Duracion = duracion;
     }
 
+    // Getters and Setters
+
     public String getNombre() {
         return Nombre;
     }
