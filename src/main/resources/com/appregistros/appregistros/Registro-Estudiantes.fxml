@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #A6FFF6;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.appregistros.appregistros.controller.EstudianteController">
+   <children>
+      <Label layoutX="23.0" layoutY="22.0" text="Registro de Estudiante">
+         <font>
+            <Font name="Ayuthaya" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNombre" layoutX="140.0" layoutY="78.0" />
+      <TextArea fx:id="txtAreaEstudiantes" layoutX="369.0" layoutY="62.0" prefHeight="200.0" prefWidth="200.0" />
+      <TextField fx:id="txtApellido" layoutX="140.0" layoutY="116.0" />
+      <TextField fx:id="txtCIF" layoutX="140.0" layoutY="157.0" />
+      <TextField fx:id="txtFacultad" layoutX="140.0" layoutY="200.0" />
+      <TextField fx:id="txtCarrera" layoutX="140.0" layoutY="236.0" />
+      <Label layoutX="46.0" layoutY="81.0" prefWidth="68.0" text="Nombre:">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="46.0" layoutY="119.0" prefWidth="68.0" text="Apellido:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="160.0" prefWidth="68.0" text="CIF:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="203.0" prefWidth="68.0" text="Facultad:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="239.0" prefWidth="68.0" text="Carrera:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Separator layoutX="329.0" layoutY="62.0" orientation="VERTICAL" prefHeight="200.0" />
+      <Button fx:id="btnAgregar" layoutX="38.0" layoutY="291.0" mnemonicParsing="false" onAction="#AgregarEstudiante" prefHeight="30.0" prefWidth="76.0" style="-fx-background-color: FCFAFA;" text="Agregar" />
+      <Button fx:id="btnLimpiar" layoutX="140.0" layoutY="291.0" mnemonicParsing="false" onAction="#limpiarCampos" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: FCFAFA;" text="Limpiar" />
+      <Button fx:id="btnBorrar" layoutX="253.0" layoutY="291.0" mnemonicParsing="false" onAction="#limpiarLista" prefHeight="30.0" prefWidth="76.0" style="-fx-background-color: FCFAFA;" text="Borrar" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="198.0" prefWidth="290.0" style="-fx-background-color: #A6FFF6;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.appregistros.appregistros.controller.MenuPrincipalController">
+   <children>
+      <Label layoutX="52.0" layoutY="14.0" text="RegistroApp" textFill="#1b30a4">
+         <font>
+            <Font name="Ayuthaya" size="26.0" />
+         </font>
+      </Label>
+      <MenuBar fx:id="mnbMenuPrincipal" layoutX="50.0" layoutY="85.0">
+        <menus>
+          <Menu fx:id="mnuCatalogo" mnemonicParsing="false" text="Catálogo">
+            <items>
+                  <MenuItem fx:id="miRegistroEstudiantes" mnemonicParsing="false" onAction="#abrirFormsEstudiante" text="Registro de Estudiantes" />
+              <MenuItem fx:id="miRegistroPeliculas" mnemonicParsing="false" onAction="#abrirFormsPelicula" text="Registro de Peliculas" />
+            </items>
+          </Menu>
+          <Menu fx:id="mnuDesarrollador" mnemonicParsing="false" text="Desarrollador">
+            <items>
+              <MenuItem fx:id="miInfo" mnemonicParsing="false" text="Info" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
