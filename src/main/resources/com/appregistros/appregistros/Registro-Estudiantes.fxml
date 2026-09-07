@@ -45,5 +45,6 @@
       <Button fx:id="btnAgregar" layoutX="38.0" layoutY="291.0" mnemonicParsing="false" onAction="#AgregarEstudiante" prefHeight="30.0" prefWidth="76.0" style="-fx-background-color: FCFAFA;" text="Agregar" />
       <Button fx:id="btnLimpiar" layoutX="140.0" layoutY="291.0" mnemonicParsing="false" onAction="#limpiarCampos" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: FCFAFA;" text="Limpiar" />
       <Button fx:id="btnBorrar" layoutX="253.0" layoutY="291.0" mnemonicParsing="false" onAction="#limpiarLista" prefHeight="30.0" prefWidth="76.0" style="-fx-background-color: FCFAFA;" text="Borrar" />
+      <Button fx:id="btnMostrar" layoutX="389.0" layoutY="293.0" mnemonicParsing="false" onAction="#MostrarEstudiantes" prefHeight="10.0" prefWidth="160.0" style="-fx-background-color: FCFAFA;" text="Mostrar Estudiantes" />
    </children>
 </AnchorPane>

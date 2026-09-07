@@ -36,14 +36,23 @@ public class EstudianteController {
         String facultad = txtFacultad.getText();
         String carrera = txtCarrera.getText();
 
-        if (nombre.isBlank() || apellido.isBlank() || cif.isBlank()) {
-            txtAreaEstudiantes.setText("Debe llenar al menos Nombre, Apellido y CIF.");
+        if (nombre.isBlank() || apellido.isBlank() || cif.isBlank() || facultad.isBlank() || carrera.isBlank()) {
+            txtAreaEstudiantes.setText("Debe llenar todos los campos.");
+            return;
+        }
+
+        //cif tiene que ser int
+        int cifInt;
+        try {
+            cifInt = Integer.parseInt(cif);
+        } catch (NumberFormatException e) {
+            txtAreaEstudiantes.setText("El CIF debe ser un número entero.");
             return;
         }
 
         String estudianteInfo = "Nombre: " + nombre + "\n" +
                 "Apellido: " + apellido + "\n" +
-                "CIF: " + cif + "\n" +
+                "CIF: " + cifInt + "\n" +
                 "Facultad: " + facultad + "\n" +
                 "Carrera: " + carrera + "\n\n";
 
