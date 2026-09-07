@@ -88,15 +88,6 @@ public class PeliculaController {
             //borrar el ultimo agregado
         if (!peliculas.isEmpty()) {
             peliculas.remove(peliculas.size() - 1);
-            // Reescribir el archivo sin la última película
-            try {
-                Files.write(dataFile, "".getBytes(StandardCharsets.UTF_8), StandardOpenOption.TRUNCATE_EXISTING);
-                for (Peliculas p : peliculas) {
-                    savePeliculaToFile(p);
-                }
-            } catch (IOException e) {
-                showError("No se pudo actualizar el fichero de datos: " + e.getMessage());
-            }
         }
     }
 
