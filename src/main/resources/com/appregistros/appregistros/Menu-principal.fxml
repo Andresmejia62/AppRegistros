@@ -11,7 +11,7 @@
             <Font name="Ayuthaya" size="26.0" />
          </font>
       </Label>
-      <MenuBar fx:id="mnbMenuPrincipal" layoutX="50.0" layoutY="85.0">
+      <MenuBar fx:id="mnbMenuPrincipal" layoutX="27.0" layoutY="88.0">
         <menus>
           <Menu fx:id="mnuCatalogo" mnemonicParsing="false" text="Catálogo">
             <items>
@@ -22,6 +22,11 @@
           <Menu fx:id="mnuDesarrollador" mnemonicParsing="false" text="Desarrollador">
             <items>
               <MenuItem fx:id="miInfo" mnemonicParsing="false" onAction="#abrirFormsDesarrollador" text="Info" />
+            </items>
+          </Menu>
+          <Menu fx:id="mnuAyuda" mnemonicParsing="false" text="Ayuda">
+            <items>
+              <MenuItem fx:id="miAyuda" mnemonicParsing="false" onAction="#abrirHelp" text="Cómo usar" />
             </items>
           </Menu>
         </menus>
