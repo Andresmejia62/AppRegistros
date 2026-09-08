@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -30,5 +31,15 @@ public class MenuPrincipalController {
         stage.setTitle("Registro de Películas");
         stage.setScene(scene);
         stage.show();
+    }
+
+    @FXML
+    private void abrirFormsDesarrollador(ActionEvent event) throws IOException {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Info Desarrollador");
+        alert.setHeaderText(null);
+        alert.setContentText("Nombre: Andres Eduardo Mejia Castro \nCif: 22011505 \nCorreo: amejia@uamv.edu.ni");
+        alert.showAndWait();
+        return;
     }
 }
