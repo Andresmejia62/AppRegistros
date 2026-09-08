@@ -91,6 +91,16 @@ public class PeliculaController {
         }
     }
 
+    @FXML
+    private void eliminarSeleccion() {
+        Peliculas seleccionado = tblPeliculas.getSelectionModel().getSelectedItem();
+        if (seleccionado == null) {
+            showError("Seleccione una película para eliminar.");
+            return;
+        }
+        peliculas.remove(seleccionado);
+    }
+
     private void configureTable() {
         colNombre.setCellValueFactory(new PropertyValueFactory<>("nombre"));
         colDirector.setCellValueFactory(new PropertyValueFactory<>("director"));

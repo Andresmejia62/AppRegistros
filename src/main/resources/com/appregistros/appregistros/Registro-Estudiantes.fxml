@@ -12,7 +12,16 @@
          </font>
       </Label>
       <TextField fx:id="txtNombre" layoutX="140.0" layoutY="78.0" promptText="Nombre del estudiante" />
-      <TextArea fx:id="txtAreaEstudiantes" layoutX="369.0" layoutY="62.0" prefHeight="200.0" prefWidth="200.0" />
+      <TextArea fx:id="txtAreaEstudiantes" layoutX="369.0" layoutY="62.0" prefHeight="200.0" prefWidth="200.0">
+         <contextMenu>
+           <ContextMenu>
+             <items>
+               <MenuItem text="Eliminar último" onAction="#limpiarLista" />
+               <MenuItem text="Limpiar campos" onAction="#limpiarCampos" />
+             </items>
+           </ContextMenu>
+         </contextMenu>
+      </TextArea>
       <TextField fx:id="txtApellido" layoutX="140.0" layoutY="116.0" promptText="Apellido del estudiante" />
       <TextField fx:id="txtCIF" layoutX="140.0" layoutY="157.0" promptText="Codigo de estudiante" />
       <TextField fx:id="txtFacultad" layoutX="140.0" layoutY="200.0" promptText="Ingenieria/Marketing/Ciencias Salud" />

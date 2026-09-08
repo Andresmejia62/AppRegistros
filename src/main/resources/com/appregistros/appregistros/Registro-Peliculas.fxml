@@ -45,6 +45,13 @@
       <Button fx:id="btnLimpiar" layoutX="140.0" layoutY="291.0" mnemonicParsing="false" onAction="#limpiarCampos" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: FCFAFA;" text="Limpiar" />
       <Button fx:id="btnBorrar" layoutX="253.0" layoutY="291.0" mnemonicParsing="false" onAction="#limpiarLista" prefHeight="30.0" prefWidth="76.0" style="-fx-background-color: FCFAFA;" text="Borrar" />
       <TableView fx:id="tblPeliculas" layoutX="346.0" layoutY="70.0" prefHeight="200.0" prefWidth="394.0">
+        <contextMenu>
+          <ContextMenu>
+            <items>
+              <MenuItem text="Eliminar" onAction="#eliminarSeleccion" />
+            </items>
+          </ContextMenu>
+        </contextMenu>
         <columns>
           <TableColumn fx:id="colNombre" prefWidth="75.0" text="Nombre" />
           <TableColumn fx:id="colDirector" prefWidth="75.0" text="Director" />
